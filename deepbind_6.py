@@ -144,7 +144,7 @@ import re
 
 ####Reading sequences from FASTA txt files and converting them into a list 
 
-file_list = glob.glob(os.path.join(os.getcwd(), "/Users/rithikavenkat/Desktop/la", "*.fa"))
+file_list = glob.glob(os.path.join(os.getcwd(), "./la", "*.fa"))
 
 new = []
 dna = []
@@ -223,7 +223,7 @@ count = 0
 ### This code works for all sequences length but its best if only 5 sequences are run at a time
 
 
-path = "/Users/rithikavenkat/Desktop/minidb"   
+path = "./minidb"   
 for file_name in glob.glob(os.path.join(path, '*.txt')):
     #print("On model", file_name)
    
