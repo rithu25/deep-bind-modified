@@ -151,7 +151,7 @@ test = []
 
 ### Change path here
 
-file_list = glob.glob(os.path.join(os.getcwd(), "/Users/rithikavenkat/Desktop/la", "*.fa"))
+file_list = glob.glob(os.path.join(os.getcwd(), "./la", "*.fa"))
 
 new = []
 dna = []
