@@ -144,7 +144,7 @@ import re
 
 ####Reading sequences from FASTA txt files and converting them into a list 
 
-file_list = glob.glob(os.path.join(os.getcwd(), "/Users/rithikavenkat/Desktop/la", "*.fa"))
+file_list = glob.glob(os.path.join(os.getcwd(), "./la", "*.fa"))
 
 new = []
 dna = []
@@ -247,7 +247,7 @@ count = 0
 ### This code works for all sequences length, it splits the sequence into 20 and slides by a window size of 3
 
 
-path = "/Users/rithikavenkat/Desktop/minidb"   
+path = "./minidb"   
 for file_name in glob.glob(os.path.join(path, '*.txt')):   
     print(count)
     
@@ -305,7 +305,7 @@ df.head(20)
 
 ## Mapping IDs with corresponding protein name
 dictionary = {}
-with open("/Users/rithikavenkat/Desktop/matrix2proteinname.map", "r") as file:
+with open("./Desktop/matrix2proteinname.map", "r") as file:
     for line in file:
         key, value = line.strip().split("\t")
         dictionary[key] = value
